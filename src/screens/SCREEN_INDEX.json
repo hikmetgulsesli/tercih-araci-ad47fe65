@@ -1,0 +1,179 @@
+[
+  {
+    "screenId": "07e117dc3afd4b11905c99010244610b",
+    "title": "Tercih Sayfası - Tercih Aracı",
+    "componentName": "TercihSayfasiTercihAraci",
+    "file": "src/screens/TercihSayfasiTercihAraci.tsx",
+    "buttons": 8,
+    "inputs": 0,
+    "textareas": 0,
+    "selects": 0,
+    "links": 3,
+    "actions": [
+      {
+        "id": "hazir-4",
+        "kind": "button",
+        "label": "Hazır",
+        "index": 3,
+        "actionRef": "ACT_HAZIR_DUGMESINI_ISARETLE",
+        "generatedLocalId": "hazir-4",
+        "semanticSource": "data-action",
+        "sourceLocator": "stitch/07e117dc3afd4b11905c99010244610b.html",
+        "selector": "[data-action-id=\"hazir-4\"]"
+      }
+    ],
+    "controls": [
+      {
+        "id": "hazir-4",
+        "kind": "button",
+        "label": "Hazır",
+        "index": 3,
+        "actionRef": "ACT_HAZIR_DUGMESINI_ISARETLE",
+        "generatedLocalId": "hazir-4",
+        "semanticSource": "data-action",
+        "sourceLocator": "stitch/07e117dc3afd4b11905c99010244610b.html",
+        "selector": "[data-action-id=\"hazir-4\"]",
+        "generatedSourceLocator": "src/screens/TercihSayfasiTercihAraci.tsx"
+      }
+    ],
+    "observables": [
+      {
+        "observableRef": "OBS_HAZIR_DUGMESINI_ISARETLE_HAZIR_DEGER_GORUNUR",
+        "role": "status",
+        "name": "Hazır",
+        "sourceLocator": "stitch/07e117dc3afd4b11905c99010244610b.html",
+        "selector": "[data-observable-refs~=\"OBS_HAZIR_DUGMESINI_ISARETLE_HAZIR_DEGER_GORUNUR\"]",
+        "generatedSourceLocator": "src/screens/TercihSayfasiTercihAraci.tsx"
+      },
+      {
+        "observableRef": "OBS_HAZIR_DUGMESINI_ISARETLE_HAZIR_DUGMESI_GORUNUR_ETKIN",
+        "role": "button",
+        "name": "Hazır",
+        "sourceLocator": "stitch/07e117dc3afd4b11905c99010244610b.html",
+        "selector": "[data-observable-refs~=\"OBS_HAZIR_DUGMESINI_ISARETLE_HAZIR_DUGMESI_GORUNUR_ETKIN\"]",
+        "generatedSourceLocator": "src/screens/TercihSayfasiTercihAraci.tsx"
+      }
+    ],
+    "projection": {
+      "schema": "setfarm.stitch-screen-projection.v2",
+      "mode": "contract_only",
+      "targetRef": "TARGET_TERCIH_SAYFA",
+      "rawInteractiveCounts": {
+        "buttons": 8,
+        "links": 3,
+        "inputs": 0,
+        "textareas": 0,
+        "selects": 0
+      },
+      "requiredObservableRefs": [
+        "OBS_HAZIR_DUGMESINI_ISARETLE_HAZIR_DEGER_GORUNUR",
+        "OBS_HAZIR_DUGMESINI_ISARETLE_HAZIR_DUGMESI_GORUNUR_ETKIN"
+      ]
+    },
+    "rejectedControls": [
+      {
+        "rejectionId": "help-1",
+        "kind": "button",
+        "label": "Help",
+        "index": 0,
+        "reasonCode": "undeclared_by_generation_target",
+        "sourceLocator": "stitch/07e117dc3afd4b11905c99010244610b.html",
+        "generatedSourceLocator": "src/screens/TercihSayfasiTercihAraci.tsx",
+        "selector": "[data-setfarm-rejected-control=\"help-1\"]"
+      },
+      {
+        "rejectionId": "settings-2",
+        "kind": "button",
+        "label": "Settings",
+        "index": 1,
+        "reasonCode": "undeclared_by_generation_target",
+        "sourceLocator": "stitch/07e117dc3afd4b11905c99010244610b.html",
+        "generatedSourceLocator": "src/screens/TercihSayfasiTercihAraci.tsx",
+        "selector": "[data-setfarm-rejected-control=\"settings-2\"]"
+      },
+      {
+        "rejectionId": "giris-yap-3",
+        "kind": "button",
+        "label": "Giriş Yap",
+        "index": 2,
+        "reasonCode": "undeclared_by_generation_target",
+        "sourceLocator": "stitch/07e117dc3afd4b11905c99010244610b.html",
+        "generatedSourceLocator": "src/screens/TercihSayfasiTercihAraci.tsx",
+        "selector": "[data-setfarm-rejected-control=\"giris-yap-3\"]"
+      },
+      {
+        "rejectionId": "ana-sayfa-5",
+        "kind": "button",
+        "label": "Ana Sayfa",
+        "index": 4,
+        "reasonCode": "undeclared_by_generation_target",
+        "sourceLocator": "stitch/07e117dc3afd4b11905c99010244610b.html",
+        "generatedSourceLocator": "src/screens/TercihSayfasiTercihAraci.tsx",
+        "selector": "[data-setfarm-rejected-control=\"ana-sayfa-5\"]"
+      },
+      {
+        "rejectionId": "tercihler-6",
+        "kind": "button",
+        "label": "Tercihler",
+        "index": 5,
+        "reasonCode": "undeclared_by_generation_target",
+        "sourceLocator": "stitch/07e117dc3afd4b11905c99010244610b.html",
+        "generatedSourceLocator": "src/screens/TercihSayfasiTercihAraci.tsx",
+        "selector": "[data-setfarm-rejected-control=\"tercihler-6\"]"
+      },
+      {
+        "rejectionId": "siralama-7",
+        "kind": "button",
+        "label": "Sıralama",
+        "index": 6,
+        "reasonCode": "undeclared_by_generation_target",
+        "sourceLocator": "stitch/07e117dc3afd4b11905c99010244610b.html",
+        "generatedSourceLocator": "src/screens/TercihSayfasiTercihAraci.tsx",
+        "selector": "[data-setfarm-rejected-control=\"siralama-7\"]"
+      },
+      {
+        "rejectionId": "profil-8",
+        "kind": "button",
+        "label": "Profil",
+        "index": 7,
+        "reasonCode": "undeclared_by_generation_target",
+        "sourceLocator": "stitch/07e117dc3afd4b11905c99010244610b.html",
+        "generatedSourceLocator": "src/screens/TercihSayfasiTercihAraci.tsx",
+        "selector": "[data-setfarm-rejected-control=\"profil-8\"]"
+      },
+      {
+        "rejectionId": "kilavuz-1",
+        "kind": "link",
+        "label": "Kılavuz",
+        "index": 0,
+        "reasonCode": "undeclared_by_generation_target",
+        "href": "#",
+        "sourceLocator": "stitch/07e117dc3afd4b11905c99010244610b.html",
+        "generatedSourceLocator": "src/screens/TercihSayfasiTercihAraci.tsx",
+        "selector": "[data-setfarm-rejected-control=\"kilavuz-1\"]"
+      },
+      {
+        "rejectionId": "tercihlerim-2",
+        "kind": "link",
+        "label": "Tercihlerim",
+        "index": 1,
+        "reasonCode": "undeclared_by_generation_target",
+        "href": "#",
+        "sourceLocator": "stitch/07e117dc3afd4b11905c99010244610b.html",
+        "generatedSourceLocator": "src/screens/TercihSayfasiTercihAraci.tsx",
+        "selector": "[data-setfarm-rejected-control=\"tercihlerim-2\"]"
+      },
+      {
+        "rejectionId": "analiz-3",
+        "kind": "link",
+        "label": "Analiz",
+        "index": 2,
+        "reasonCode": "undeclared_by_generation_target",
+        "href": "#",
+        "sourceLocator": "stitch/07e117dc3afd4b11905c99010244610b.html",
+        "generatedSourceLocator": "src/screens/TercihSayfasiTercihAraci.tsx",
+        "selector": "[data-setfarm-rejected-control=\"analiz-3\"]"
+      }
+    ]
+  }
+]
