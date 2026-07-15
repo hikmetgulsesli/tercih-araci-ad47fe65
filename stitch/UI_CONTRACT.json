@@ -1,0 +1,134 @@
+[
+  {
+    "screenId": "07e117dc3afd4b11905c99010244610b",
+    "screenTitle": "Tercih Sayfası - Tercih Aracı",
+    "deviceType": "DESKTOP",
+    "elements": [
+      {
+        "type": "link",
+        "label": "Kılavuz",
+        "href": "#",
+        "line": 120
+      },
+      {
+        "type": "link",
+        "label": "Tercihlerim",
+        "href": "#",
+        "line": 121
+      },
+      {
+        "type": "link",
+        "label": "Analiz",
+        "href": "#",
+        "line": 122
+      },
+      {
+        "type": "button",
+        "label": "Help",
+        "line": 126
+      },
+      {
+        "type": "button",
+        "label": "Settings",
+        "line": 129
+      },
+      {
+        "type": "button",
+        "label": "Giriş Yap",
+        "line": 132
+      },
+      {
+        "type": "button",
+        "label": "Hazır",
+        "line": 158
+      },
+      {
+        "type": "button",
+        "label": "Ana Sayfa",
+        "line": 165
+      },
+      {
+        "type": "button",
+        "label": "Tercihler",
+        "line": 169
+      },
+      {
+        "type": "button",
+        "label": "Sıralama",
+        "line": 173
+      },
+      {
+        "type": "button",
+        "label": "Profil",
+        "line": 177
+      }
+    ],
+    "navigation": [
+      {
+        "type": "link",
+        "label": "Kılavuz",
+        "href": "#",
+        "line": 120
+      },
+      {
+        "type": "link",
+        "label": "Tercihlerim",
+        "href": "#",
+        "line": 121
+      },
+      {
+        "type": "link",
+        "label": "Analiz",
+        "href": "#",
+        "line": 122
+      }
+    ],
+    "buttons": [
+      {
+        "type": "button",
+        "label": "Help",
+        "line": 126
+      },
+      {
+        "type": "button",
+        "label": "Settings",
+        "line": 129
+      },
+      {
+        "type": "button",
+        "label": "Giriş Yap",
+        "line": 132
+      },
+      {
+        "type": "button",
+        "label": "Hazır",
+        "line": 158
+      },
+      {
+        "type": "button",
+        "label": "Ana Sayfa",
+        "line": 165
+      },
+      {
+        "type": "button",
+        "label": "Tercihler",
+        "line": 169
+      },
+      {
+        "type": "button",
+        "label": "Sıralama",
+        "line": 173
+      },
+      {
+        "type": "button",
+        "label": "Profil",
+        "line": 177
+      }
+    ],
+    "inputs": [],
+    "hardcodedData": [],
+    "totalInteractive": 11,
+    "requiresRouter": false,
+    "requiresDragDrop": false
+  }
+]
