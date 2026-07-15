@@ -1,0 +1,11 @@
+[
+  {
+    "screenId": "07e117dc3afd4b11905c99010244610b",
+    "title": "Tercih Sayfası - Tercih Aracı",
+    "htmlFile": "07e117dc3afd4b11905c99010244610b.html",
+    "deviceType": "DESKTOP",
+    "surfaceIds": [
+      "SURF_TERCIH_SAYFA"
+    ]
+  }
+]

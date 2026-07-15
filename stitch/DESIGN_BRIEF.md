@@ -1,0 +1,37 @@
+# SETFARM_STITCH_V3_GENERATION_CONTRACT
+
+contract_schema: setfarm.design-generation-targets.v1
+product_spec_hash: 1e75184b3f4bab305f861e5161abafbb6043556d26d839f6cfce9168fe36c863
+stage_id: all-targets-preview
+Generate exactly 1 screens and no others in this response.
+Target device type: DESKTOP.
+All visible user-facing text must be in tr.
+
+## EXACT_SCREEN_TARGETS
+SCREEN_TARGET_1:
+- target_ref: TARGET_TERCIH_SAYFA
+- surface_ref: SURF_TERCIH_SAYFA
+- exact_screen_title: Tercih Sayfası - Tercih Aracı
+- surface_kind: page
+- exact_actions:
+  - action_ref: ACT_HAZIR_DUGMESINI_ISARETLE
+    visible_intent: Hazır Düğmesini İşaretle
+    exact_action_attribute: data-action="ACT_HAZIR_DUGMESINI_ISARETLE"
+    exact_input_mappings: none
+    exact_observable_selectors: [{"observableRef":"OBS_HAZIR_DUGMESINI_ISARETLE_DURUM_HAZIR_METNI_GORUNUR","selector":{"kind":"surface","surfaceRef":"SURF_TERCIH_SAYFA"}},{"observableRef":"OBS_HAZIR_DUGMESINI_ISARETLE_HAZIR_DEGER_GORUNUR","selector":{"actionRef":"ACT_HAZIR_DUGMESINI_ISARETLE","kind":"accessibility","name":"Hazır","role":"status","surfaceRef":"SURF_TERCIH_SAYFA"}},{"observableRef":"OBS_HAZIR_DUGMESINI_ISARETLE_HAZIR_DUGMESI_GORUNUR_ETKIN","selector":{"actionRef":"ACT_HAZIR_DUGMESINI_ISARETLE","kind":"accessibility","name":"Hazır","role":"button","surfaceRef":"SURF_TERCIH_SAYFA"}},{"observableRef":"OBS_HAZIR_DUGMESINI_ISARETLE_ROTADA_KALMA_VE_SAYFA_YENILEME","selector":{"kind":"surface","surfaceRef":"SURF_TERCIH_SAYFA"}}]
+
+## MACHINE_READABLE_COMPLETENESS_RULES
+- The returned screen title must equal exact_screen_title byte-for-byte. Do not abbreviate, translate, normalize, decorate, or rename it.
+- Return exactly one screen for each SCREEN_TARGET and no style-guide, assistant, summary, moodboard, PRD, or extra canvas.
+- For every exact_actions entry, render exactly one actionable HTML element and preserve the exact data-action="ACT_*" attribute on that same button, link, or input element.
+- Do not put ACT_* only in prose, labels, nearby wrappers, comments, scripts, or a different DOM element; the actionable element itself owns data-action.
+- For every exact_input_mappings entry, exactly one value-providing element must preserve data-action-input="ACT_*.field". A checkbox/action element may carry both data-action and data-action-input when it supplies its own value.
+- For every exact_observable_selectors entry, preserve the exact selector contract: control selectors bind the same data-action element, surface selectors require one wrapper with data-surface-id equal to the exact SURF_* ref, and accessibility selectors require the exact role plus an explicit aria-label equal to the declared name byte-for-byte on one element. The Setfarm converter assigns semantic observable IDs only after this exact match.
+- Do not emit any button, link, input, textarea, select, checkbox, tab, menu item, or other actionable control that is not declared by exact_actions or exact_input_mappings.
+- Disabled-looking, placeholder, icon-only, overflow, breadcrumb, navigation, and decorative controls are still controls and are forbidden unless declared above.
+- Custom data-action and data-action-input attributes are contractual source, not visual copy. Preserve their exact case and spelling in exported HTML.
+
+## PRODUCT_SCOPE
+Product: Tercih Aracı
+Goals: /tercih yolundaki Hazır düğmesine tıklandığında uygulama durumu hazır olarak ayarlanır, değer sayfa yenilendiğinde korumak için yerel depolamaya yazılır, 'Durum hazır' metni ve hazır değeri gösterilir, düğme görünür ve etkin kalır ve kullanıcı /tercih yolunda kalmaya devam eder.
+Do not invent product behavior outside the typed targets above.

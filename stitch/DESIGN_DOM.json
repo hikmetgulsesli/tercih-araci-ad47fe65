@@ -1,0 +1,422 @@
+{
+  "generatedAt": "2026-07-15T13:17:54.009Z",
+  "screenCount": 1,
+  "screens": {
+    "07e117dc3afd4b11905c99010244610b": {
+      "screenId": "07e117dc3afd4b11905c99010244610b",
+      "materialSymbolsRequired": true,
+      "sections": [
+        {
+          "tag": "header",
+          "layout": "flex-row",
+          "classes": [
+            "bg-surface-container-lowest",
+            "border-b",
+            "border-secondary-container",
+            "flat",
+            "no",
+            "shadows",
+            "flex",
+            "justify-between",
+            "items-center",
+            "w-full"
+          ],
+          "childCount": 2
+        },
+        {
+          "tag": "main",
+          "layout": "flex-row",
+          "classes": [
+            "flex-grow",
+            "flex",
+            "items-center",
+            "justify-center",
+            "p-margin-mobile",
+            "md:p-margin-desktop"
+          ],
+          "childCount": 6
+        },
+        {
+          "tag": "nav",
+          "layout": "flex-row",
+          "classes": [
+            "fixed",
+            "bottom-0",
+            "left-0",
+            "w-full",
+            "z-50",
+            "flex",
+            "justify-around",
+            "items-center",
+            "py-2",
+            "md:hidden"
+          ],
+          "childCount": 0
+        }
+      ],
+      "buttons": [
+        {
+          "kind": "button",
+          "label": "Help",
+          "classes": [
+            "text-secondary",
+            "hover:text-primary-container",
+            "transition-colors",
+            "duration-200"
+          ],
+          "icon": "help",
+          "action": "navigate",
+          "expectedBehavior": "navigate:/help",
+          "expectedRoute": "/help",
+          "routeInferred": true
+        },
+        {
+          "kind": "button",
+          "label": "Settings",
+          "classes": [
+            "text-secondary",
+            "hover:text-primary-container",
+            "transition-colors",
+            "duration-200"
+          ],
+          "icon": "settings",
+          "action": "navigate",
+          "expectedBehavior": "navigate:/settings",
+          "expectedRoute": "/settings",
+          "routeInferred": true
+        },
+        {
+          "kind": "button",
+          "label": "Giriş Yap",
+          "classes": [
+            "bg-primary",
+            "text-on-primary",
+            "font-label-md",
+            "text-label-md",
+            "px-4",
+            "py-2",
+            "rounded-DEFAULT",
+            "hover:bg-primary-container",
+            "transition-colors",
+            "duration-200"
+          ],
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Hazır",
+          "classes": [
+            "w-full",
+            "h-12",
+            "bg-primary",
+            "hover:bg-primary-container",
+            "text-on-primary",
+            "font-label-md",
+            "text-label-md",
+            "rounded-DEFAULT",
+            "transition-all",
+            "duration-200",
+            "flex",
+            "items-center",
+            "justify-center",
+            "shadow-sm",
+            "relative",
+            "z-10"
+          ],
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Ana Sayfa",
+          "classes": [
+            "flex",
+            "flex-col",
+            "items-center",
+            "justify-center",
+            "text-secondary",
+            "px-4",
+            "py-1",
+            "hover:bg-surface-container-high",
+            "transition-all"
+          ],
+          "icon": "home",
+          "action": "navigate",
+          "expectedBehavior": "navigate:/",
+          "expectedRoute": "/",
+          "routeInferred": true
+        },
+        {
+          "kind": "button",
+          "label": "Tercihler",
+          "classes": [
+            "flex",
+            "flex-col",
+            "items-center",
+            "justify-center",
+            "bg-primary-container",
+            "text-on-primary-container",
+            "rounded-full",
+            "px-4",
+            "py-1",
+            "scale-95",
+            "duration-150",
+            "transition-all"
+          ],
+          "icon": "list_alt",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Sıralama",
+          "classes": [
+            "flex",
+            "flex-col",
+            "items-center",
+            "justify-center",
+            "text-secondary",
+            "px-4",
+            "py-1",
+            "hover:bg-surface-container-high",
+            "transition-all"
+          ],
+          "icon": "analytics",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Profil",
+          "classes": [
+            "flex",
+            "flex-col",
+            "items-center",
+            "justify-center",
+            "text-secondary",
+            "px-4",
+            "py-1",
+            "hover:bg-surface-container-high",
+            "transition-all"
+          ],
+          "icon": "person",
+          "action": "navigate",
+          "expectedBehavior": "navigate:/profile",
+          "expectedRoute": "/profile",
+          "routeInferred": true
+        }
+      ],
+      "inputs": [],
+      "navLinks": [
+        {
+          "kind": "link",
+          "label": "Kılavuz",
+          "href": "#",
+          "classes": [
+            "text-secondary",
+            "font-label-md",
+            "text-label-md",
+            "pb-4",
+            "hover:text-primary-container",
+            "transition-colors",
+            "duration-200"
+          ],
+          "icon": null,
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Tercihlerim",
+          "href": "#",
+          "classes": [
+            "text-primary",
+            "border-b-2",
+            "border-primary",
+            "font-label-md",
+            "text-label-md",
+            "pb-4",
+            "opacity-80",
+            "transition-opacity"
+          ],
+          "icon": null,
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Analiz",
+          "href": "#",
+          "classes": [
+            "text-secondary",
+            "font-label-md",
+            "text-label-md",
+            "pb-4",
+            "hover:text-primary-container",
+            "transition-colors",
+            "duration-200"
+          ],
+          "icon": null,
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        }
+      ],
+      "cards": [],
+      "icons": [
+        "help",
+        "settings",
+        "checklist",
+        "home",
+        "list_alt",
+        "analytics",
+        "person"
+      ],
+      "images": [],
+      "cssVars": {},
+      "colorPalette": {},
+      "fonts": [
+        "Hanken Grotesk",
+        "Inter",
+        "Material Symbols Outlined"
+      ],
+      "layoutHints": {
+        "flexDirection": "col",
+        "gap": "6"
+      },
+      "behaviorContract": [
+        {
+          "kind": "link",
+          "label": "Kılavuz",
+          "icon": null,
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Tercihlerim",
+          "icon": null,
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Analiz",
+          "icon": null,
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "button",
+          "label": "Help",
+          "icon": "help",
+          "action": "navigate",
+          "route": "/help",
+          "expectedBehavior": "navigate:/help"
+        },
+        {
+          "kind": "button",
+          "label": "Settings",
+          "icon": "settings",
+          "action": "navigate",
+          "route": "/settings",
+          "expectedBehavior": "navigate:/settings"
+        },
+        {
+          "kind": "button",
+          "label": "Giriş Yap",
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Hazır",
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Ana Sayfa",
+          "icon": "home",
+          "action": "navigate",
+          "route": "/",
+          "expectedBehavior": "navigate:/"
+        },
+        {
+          "kind": "button",
+          "label": "Tercihler",
+          "icon": "list_alt",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Sıralama",
+          "icon": "analytics",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Profil",
+          "icon": "person",
+          "action": "navigate",
+          "route": "/profile",
+          "expectedBehavior": "navigate:/profile"
+        }
+      ],
+      "tabBar": [
+        {
+          "kind": "link",
+          "label": "Kılavuz",
+          "icon": null,
+          "route": "#",
+          "active": true
+        },
+        {
+          "kind": "link",
+          "label": "Tercihlerim",
+          "icon": null,
+          "route": "#",
+          "active": true
+        },
+        {
+          "kind": "link",
+          "label": "Analiz",
+          "icon": null,
+          "route": "#",
+          "active": true
+        },
+        {
+          "kind": "button",
+          "label": "Ana Sayfa",
+          "icon": "home",
+          "active": false
+        },
+        {
+          "kind": "button",
+          "label": "Tercihler",
+          "icon": "list_alt",
+          "active": true
+        },
+        {
+          "kind": "button",
+          "label": "Sıralama",
+          "icon": "analytics",
+          "active": false
+        },
+        {
+          "kind": "button",
+          "label": "Profil",
+          "icon": "person",
+          "active": false
+        }
+      ],
+      "title": "Tercih Sayfası - Tercih Aracı"
+    }
+  }
+}

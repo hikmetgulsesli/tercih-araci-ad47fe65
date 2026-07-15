@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+
+<html class="light" lang="tr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Tercih Sayfası - Tercih Aracı</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@600;700&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-dim": "#cadaff",
+                        "surface-tint": "#0c56d0",
+                        "surface-container-high": "#e0e8ff",
+                        "surface-container-highest": "#d7e2ff",
+                        "on-secondary-container": "#606365",
+                        "inverse-on-surface": "#edf0ff",
+                        "secondary-fixed-dim": "#c5c6c8",
+                        "on-primary-container": "#c4d2ff",
+                        "secondary-container": "#dee0e2",
+                        "primary": "#003d9b",
+                        "on-tertiary-container": "#ffca81",
+                        "on-tertiary-fixed": "#291800",
+                        "on-error-container": "#93000a",
+                        "on-surface": "#041b3c",
+                        "surface-variant": "#d7e2ff",
+                        "background": "#f9f9ff",
+                        "on-tertiary-fixed-variant": "#624000",
+                        "tertiary-container": "#7d5200",
+                        "outline": "#737685",
+                        "on-secondary-fixed": "#191c1e",
+                        "tertiary-fixed-dim": "#ffb950",
+                        "on-background": "#041b3c",
+                        "outline-variant": "#c3c6d6",
+                        "on-secondary": "#ffffff",
+                        "secondary-fixed": "#e1e2e4",
+                        "inverse-primary": "#b2c5ff",
+                        "surface-container": "#e8edff",
+                        "inverse-surface": "#1d3052",
+                        "tertiary": "#5e3c00",
+                        "on-secondary-fixed-variant": "#444749",
+                        "tertiary-fixed": "#ffddb3",
+                        "surface-bright": "#f9f9ff",
+                        "on-primary-fixed-variant": "#0040a2",
+                        "surface": "#f9f9ff",
+                        "primary-fixed-dim": "#b2c5ff",
+                        "on-primary-fixed": "#001848",
+                        "on-primary": "#ffffff",
+                        "primary-fixed": "#dae2ff",
+                        "surface-container-low": "#f1f3ff",
+                        "error": "#ba1a1a",
+                        "on-tertiary": "#ffffff",
+                        "on-error": "#ffffff",
+                        "primary-container": "#0052cc",
+                        "error-container": "#ffdad6",
+                        "secondary": "#5c5f60",
+                        "surface-container-lowest": "#ffffff",
+                        "on-surface-variant": "#434654"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "container-max": "1280px",
+                        "margin-mobile": "16px",
+                        "gutter": "24px",
+                        "margin-desktop": "48px",
+                        "base": "8px"
+                    },
+                    "fontFamily": {
+                        "label-sm": ["Inter"],
+                        "headline-md": ["Hanken Grotesk"],
+                        "body-lg": ["Inter"],
+                        "headline-lg-mobile": ["Hanken Grotesk"],
+                        "body-sm": ["Inter"],
+                        "headline-lg": ["Hanken Grotesk"],
+                        "headline-xl": ["Hanken Grotesk"],
+                        "label-md": ["Inter"],
+                        "body-md": ["Inter"]
+                    },
+                    "fontSize": {
+                        "label-sm": ["12px", { "lineHeight": "16px", "fontWeight": "500" }],
+                        "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "headline-lg-mobile": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+                        "body-sm": ["14px", { "lineHeight": "20px", "fontWeight": "400" }],
+                        "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+                        "headline-xl": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "label-md": ["14px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body {
+            background-color: theme('colors.background');
+            color: theme('colors.on-background');
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+    </style>
+</head>
+<body>
+<!-- TopNavBar -->
+<header class="bg-surface-container-lowest border-b border-secondary-container flat no shadows flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto h-16 hidden md:flex top-0 w-full z-50">
+<div class="flex items-center gap-6">
+<span class="font-headline-md text-headline-md font-bold text-primary">Tercih Aracı</span>
+<nav class="flex gap-4 items-center h-full pt-4">
+<a class="text-secondary font-label-md text-label-md pb-4 hover:text-primary-container transition-colors duration-200" href="#">Kılavuz</a>
+<a class="text-primary border-b-2 border-primary font-label-md text-label-md pb-4 opacity-80 transition-opacity" href="#">Tercihlerim</a>
+<a class="text-secondary font-label-md text-label-md pb-4 hover:text-primary-container transition-colors duration-200" href="#">Analiz</a>
+</nav>
+</div>
+<div class="flex items-center gap-4">
+<button aria-label="Help" class="text-secondary hover:text-primary-container transition-colors duration-200">
+<span class="material-symbols-outlined" data-icon="help">help</span>
+</button>
+<button aria-label="Settings" class="text-secondary hover:text-primary-container transition-colors duration-200">
+<span class="material-symbols-outlined" data-icon="settings">settings</span>
+</button>
+<button class="bg-primary text-on-primary font-label-md text-label-md px-4 py-2 rounded-DEFAULT hover:bg-primary-container transition-colors duration-200">Giriş Yap</button>
+</div>
+</header>
+<!-- Main Content -->
+<main class="flex-grow flex items-center justify-center p-margin-mobile md:p-margin-desktop" data-surface-id="SURF_TERCIH_SAYFA">
+<div class="bg-surface-container-lowest border border-outline-variant rounded-xl p-8 max-w-md w-full shadow-[0px_4px_8px_rgba(0,0,0,0.05)] text-center flex flex-col items-center gap-8 relative overflow-hidden group">
+<!-- Subtle background effect -->
+<div class="absolute inset-0 bg-gradient-to-br from-surface-container-high/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
+<div class="flex flex-col items-center gap-4 relative z-10">
+<div class="w-16 h-16 rounded-full bg-surface-container flex items-center justify-center mb-2">
+<span class="material-symbols-outlined text-primary text-3xl" data-icon="checklist">checklist</span>
+</div>
+<h1 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface">Tercihleriniz Hazır</h1>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-[280px]">
+                    Seçimleriniz başarıyla kaydedildi ve değerlendirme için sistemimize eklendi.
+                </p>
+</div>
+<!-- Status Indicator Section -->
+<div class="w-full bg-surface-container-low rounded-lg p-4 flex items-center justify-between border border-secondary-container relative z-10">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider">Durum hazır</span>
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-[#10B981]"></span>
+<span aria-label="Hazır" class="font-label-md text-label-md text-on-surface" role="status">Hazır</span>
+</div>
+</div>
+<!-- Action Button -->
+<button aria-label="Hazır" class="w-full h-12 bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md rounded-DEFAULT transition-all duration-200 flex items-center justify-center shadow-sm relative z-10" data-action="ACT_HAZIR_DUGMESINI_ISARETLE" role="button">
+                Hazır
+            </button>
+</div>
+</main>
+<!-- BottomNavBar (Mobile Only) -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center py-2 md:hidden bg-surface-container-lowest border-t border-secondary-container flat no shadows pb-safe">
+<button class="flex flex-col items-center justify-center text-secondary px-4 py-1 hover:bg-surface-container-high transition-all">
+<span class="material-symbols-outlined" data-icon="home">home</span>
+<span class="font-label-sm text-label-sm mt-1">Ana Sayfa</span>
+</button>
+<button class="flex flex-col items-center justify-center bg-primary-container text-on-primary-container rounded-full px-4 py-1 scale-95 duration-150 transition-all">
+<span class="material-symbols-outlined" data-icon="list_alt">list_alt</span>
+<span class="font-label-sm text-label-sm mt-1">Tercihler</span>
+</button>
+<button class="flex flex-col items-center justify-center text-secondary px-4 py-1 hover:bg-surface-container-high transition-all">
+<span class="material-symbols-outlined" data-icon="analytics">analytics</span>
+<span class="font-label-sm text-label-sm mt-1">Sıralama</span>
+</button>
+<button class="flex flex-col items-center justify-center text-secondary px-4 py-1 hover:bg-surface-container-high transition-all">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+<span class="font-label-sm text-label-sm mt-1">Profil</span>
+</button>
+</nav>
+<style>
+        /* Safe area padding for iOS */
+        @supports (padding-bottom: env(safe-area-inset-bottom)) {
+            .pb-safe {
+                padding-bottom: calc(0.5rem + env(safe-area-inset-bottom));
+            }
+        }
+    </style>
+</body></html>
